@@ -1,37 +1,121 @@
-## Welcome to GitHub Pages
+<p align="center">
+  <a href="https://anuraghazra.github.io/">
+    <img alt="Gatsby" src="./src/static/logo_noalpha.svg" width="100" />
+    <h2 align="center">Anurag Hazra</h2>
+  </a>
+</p> 
+<p align="center">Creative FrontEnd Web Developer</p>
 
-You can use the [editor on GitHub](https://github.com/ashiquebiniqbal/ashique.github.io/edit/develop/docs/index.md) to maintain and preview the content for your website in Markdown files.
+[![Build Status](https://travis-ci.org/anuraghazra/anuraghazra.github.io.svg?branch=develop)](https://travis-ci.org/anuraghazra/anuraghazra.github.io)
+![GitHub](https://img.shields.io/github/license/anuraghazra/anuraghazra.github.io)
+![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Fanuraghazra.github.io)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+![Anurag Hazra Site Preview](./src/static/screenshot.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Strained eyes? There's DarkMode too :p
 
-```markdown
-Syntax highlighted code block
+*NOTE: If you are using this site as a template for your own portfolio site, I would be very glad if you add a link to the original site with my name in footer*
 
-# Header 1
-## Header 2
-### Header 3
+## :rocket: Quick start
 
-- Bulleted
-- List
+**Run the site locally**
 
-1. Numbered
-2. List
+_NOTE: The default branch for this repo is `develop`, when you push or pull make sure you specify the correct branch_
 
-**Bold** and _Italic_ and `Code` text
+### Step 1: Clone The Repo
 
-[Link](url) and ![Image](src)
+Fork the repository. then clone the repo locally by doing -
+
+```bash
+git clone https://github.com/anuraghazra/anuraghazra.github.io.git
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Step 2: Install Dependencies
 
-### Jekyll Themes
+cd into the directory
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ashiquebiniqbal/ashique.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+cd anuraghazra.github.io
+```
 
-### Support or Contact
+install all the dependencies
+```bash
+npm install
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Step 3: Start Development Server
+
+Then start the development Server
+```
+npm run develop
+```
+After running the development server the site should be running on https://localhost:8000
+
+
+## :open_file_folder: What's inside?
+
+A quick look at the folder structure of this project.
+
+    .
+    ├── content
+    │   ├───blog
+    │   ├───case-studies
+    │   └───json
+    ├── cypress
+    ├── plugins
+    └── src
+        ├───components
+        │   ├───About
+        │   ├───Blog
+        │   ├───common
+        │   ├───Concepts
+        │   ├───Contact
+        │   ├───CreativeCoding
+        │   ├───Home
+        │   ├───Layout
+        │   │   └───Navbar
+        │   ├───Lightbox
+        │   ├───Projects
+        │   └───Skills
+        ├───hooks
+        ├───pages
+        ├───static
+        │   └───images
+        ├───styles
+        └───templates
+
+
+## Tools Used
+
+1. Gatsby.js (of course)
+2. Styled Components for styling
+3. Cypress for E2E Testing
+4. Jest for Unit Testing
+5. TravisCI for CI/CD
+
+## :v: Contributing
+
+*NOTE: if you want to change the [blog content](./content) or fix any typo you can do that from github's ui without cloning the repo locally*
+
+After cloning & setting up the local project you can push the changes to your github fork and make a pull request.
+
+> You can also run the tests locally to see if everything works fine with
+
+### Running tests
+```bash
+npm run test
+npm run test:e2e
+```
+
+### Pushing the changes
+
+```bash
+git add .
+git commit -m "commit message"
+git push YOUR_REPO_URL develop
+```
+
+------
+
+Made with :heart: and Gatsbyjs
